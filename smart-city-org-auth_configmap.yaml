@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-config
+data:
+  ASPNETCORE_ENVIRONMENT: "Production"
+  ConnectionStrings__DefaultConnection: "Server=db;Database=api_db;User Id=sa;Password=Your_password123;"
+  FeatureFlag__EnableX: "true"
